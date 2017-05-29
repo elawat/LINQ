@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static System.Console;
 
 namespace Ch09_LINQ
@@ -13,6 +10,7 @@ namespace Ch09_LINQ
         {
             var names = new string[] { "Pamela", "Jimmy", "Toby", "Ala", "Kurt", "Ola", "Ewa", "Tonia" };
             var query = names
+                .ProcessSequence()
                 .Where(name => name.Length > 3)
                 .OrderBy(name => name.Length)
                 .ThenBy(name => name);

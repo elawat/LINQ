@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{11169F6E-6539-4951-B0B8-E40283C0BA9F}</ProjectGuid>
+    <ProjectGuid>{528A1E75-7EFC-414F-9C1D-64829A38E31B}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ch09_LINQ</RootNamespace>
-    <AssemblyName>Ch09_LINQ</AssemblyName>
+    <RootNamespace>Ch09_PLINQ</RootNamespace>
+    <AssemblyName>Ch09_PLINQ</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,12 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Ch09_MyLINQExtensions\Ch09_MyLINQExtensions.csproj">
-      <Project>{41e9ccb2-61a7-40e6-9639-cf8e64f02998}</Project>
-      <Name>Ch09_MyLINQExtensions</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
